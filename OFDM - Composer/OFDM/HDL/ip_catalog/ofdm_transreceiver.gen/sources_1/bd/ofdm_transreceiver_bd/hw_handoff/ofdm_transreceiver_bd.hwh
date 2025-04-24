@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 21 01:16:40 2025" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35ti" NAME="ofdm_transreceiver_bd" PACKAGE="cpg236" SPEEDGRADE="-1L"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ofdm_transreceiver_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="gateway_out2" RIGHT="0" SIGIS="data" SIGNAME="ofdm_transreceiver_1_gateway_out2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ofdm_transreceiver_1" PORT="gateway_out2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="imaginary_fft_input" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_imaginary_fft_input">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ofdm_transreceiver_1" PORT="imaginary_fft_input"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="22" NAME="imaginary_output" RIGHT="0" SIGIS="data" SIGNAME="ofdm_transreceiver_1_imaginary_output">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ofdm_transreceiver_1" PORT="imaginary_output"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="random_binary_stream" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_random_binary_stream">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ofdm_transreceiver_1" PORT="random_binary_stream"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="real_fft_input" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_real_fft_input">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ofdm_transreceiver_1" PORT="real_fft_input"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="22" NAME="real_output" RIGHT="0" SIGIS="data" SIGNAME="ofdm_transreceiver_1_real_output">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ofdm_transreceiver_1" PORT="real_output"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="376103243" FULLNAME="/ofdm_transreceiver_1" HWVERSION="1.0" INSTANCE="ofdm_transreceiver_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ofdm_transreceiver" VLNV="User_Company:SysGen:ofdm_transreceiver:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ofdm_transreceiver_bd_ofdm_transreceiver_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="random_binary_stream" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_random_binary_stream">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="random_binary_stream"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="real_fft_input" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_real_fft_input">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="real_fft_input"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="imaginary_fft_input" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_imaginary_fft_input">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="imaginary_fft_input"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="22" NAME="real_output" RIGHT="0" SIGIS="data" SIGNAME="ofdm_transreceiver_1_real_output">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="real_output"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="22" NAME="imaginary_output" RIGHT="0" SIGIS="data" SIGNAME="ofdm_transreceiver_1_imaginary_output">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="imaginary_output"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="gateway_out2" RIGHT="0" SIGIS="data" SIGNAME="ofdm_transreceiver_1_gateway_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="gateway_out2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

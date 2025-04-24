@@ -1,0 +1,653 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 21 01:16:42 2025
+# Process ID: 26528
+# Current directory: C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1
+# Command line: vivado.exe -log ofdm_transreceiver_bd_ofdm_transreceiver_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ofdm_transreceiver_bd_ofdm_transreceiver_1_0.tcl
+# Log file: C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1/ofdm_transreceiver_bd_ofdm_transreceiver_1_0.vds
+# Journal file: C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ofdm_transreceiver_bd_ofdm_transreceiver_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.cache/ip 
+Command: synth_design -top ofdm_transreceiver_bd_ofdm_transreceiver_1_0 -part xc7a35ticpg236-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20236
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1111.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_bd_ofdm_transreceiver_1_0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/synth/ofdm_transreceiver_bd_ofdm_transreceiver_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:381]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_default_clock_driver' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:346]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000001 
+	Parameter period bound to: 32'sb00000000000000000000000000000001 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000101 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000001 
+	Parameter trunc_period bound to: 1'b1 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000010 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000001 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter clk_for_ce_pulse_minus1 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus2 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init' (2#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init' (3#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver' (4#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-7071] port 'clr' of module 'xlclockdriver' is unconnected for instance 'clockdriver_x0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:359]
+WARNING: [Synth 8-7071] port 'ce_logic' of module 'xlclockdriver' is unconnected for instance 'clockdriver_x0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:359]
+WARNING: [Synth 8-7023] instance 'clockdriver_x0' of module 'xlclockdriver' has 7 connections declared, but only 5 given [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:359]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver__parameterized0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000011 
+	Parameter period bound to: 32'sb00000000000000000000000000000100 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000001 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000010 
+	Parameter trunc_period bound to: 3'b100 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000100 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000001 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000010 
+	Parameter clk_for_ce_pulse_minus1 bound to: 2'b10 
+	Parameter clk_for_ce_pulse_minus2 bound to: 2'b01 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b1 
+	Parameter result bound to: 1'b1 
+	Parameter init_const bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13860]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (5#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13860]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized0' (5#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized0' (5#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver__parameterized0' (5#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-7071] port 'clr' of module 'xlclockdriver' is unconnected for instance 'clockdriver' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:370]
+WARNING: [Synth 8-7071] port 'ce_logic' of module 'xlclockdriver' is unconnected for instance 'clockdriver' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:370]
+WARNING: [Synth 8-7023] instance 'clockdriver' of module 'xlclockdriver' has 7 connections declared, but only 5 given [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:370]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_default_clock_driver' (6#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:346]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_struct' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:231]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_fft' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:7]
+INFO: [Synth 8-6157] synthesizing module 'xlofdm_transreceiver_xfft_v9_1_i0_d212fa5848aec63af7e06b139f794ee4' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:584]
+INFO: [Synth 8-638] synthesizing module 'ofdm_transreceiver_xfft_v9_1_i0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/ofdm_transreceiver_xfft_v9_1_i0/synth/ofdm_transreceiver_xfft_v9_1_i0.vhd:83]
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_PART bound to: xc7a35ticpg236-1L - type: string 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_STATUS_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_NFFT_MAX bound to: 6 - type: integer 
+	Parameter C_ARCH bound to: 3 - type: integer 
+	Parameter C_HAS_NFFT bound to: 0 - type: integer 
+	Parameter C_USE_FLT_PT bound to: 0 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_TWIDDLE_WIDTH bound to: 16 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 23 - type: integer 
+	Parameter C_HAS_SCALING bound to: 0 - type: integer 
+	Parameter C_HAS_BFP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 1 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_OVFLO bound to: 0 - type: integer 
+	Parameter C_HAS_NATURAL_INPUT bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_OUTPUT bound to: 0 - type: integer 
+	Parameter C_HAS_CYCLIC_PREFIX bound to: 0 - type: integer 
+	Parameter C_HAS_XK_INDEX bound to: 0 - type: integer 
+	Parameter C_DATA_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_TWIDDLE_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BRAM_STAGES bound to: 0 - type: integer 
+	Parameter C_REORDER_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_USE_HYBRID_RAM bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_CMPY_TYPE bound to: 2 - type: integer 
+	Parameter C_BFLY_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xfft_v9_1_5' declared at 'c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/ofdm_transreceiver_xfft_v9_1_i0/hdl/xfft_v9_1_vh_rfs.vhd:103739' bound to instance 'U0' of component 'xfft_v9_1_5' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/ofdm_transreceiver_xfft_v9_1_i0/synth/ofdm_transreceiver_xfft_v9_1_i0.vhd:191]
+INFO: [Synth 8-256] done synthesizing module 'ofdm_transreceiver_xfft_v9_1_i0' (54#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/ofdm_transreceiver_xfft_v9_1_i0/synth/ofdm_transreceiver_xfft_v9_1_i0.vhd:83]
+WARNING: [Synth 8-7071] port 'event_tlast_unexpected' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:603]
+WARNING: [Synth 8-7071] port 'event_tlast_missing' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:603]
+WARNING: [Synth 8-7071] port 'event_status_channel_halt' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:603]
+WARNING: [Synth 8-7071] port 'event_data_in_channel_halt' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:603]
+WARNING: [Synth 8-7071] port 'event_data_out_channel_halt' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:603]
+WARNING: [Synth 8-7023] instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' of module 'ofdm_transreceiver_xfft_v9_1_i0' has 19 connections declared, but only 14 given [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:603]
+INFO: [Synth 8-6155] done synthesizing module 'xlofdm_transreceiver_xfft_v9_1_i0_d212fa5848aec63af7e06b139f794ee4' (55#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:584]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_xlregister' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:284]
+	Parameter d_width bound to: 16 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized1' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized1' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 16'b0000000000000000 
+	Parameter init_const bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized1' (55#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized1' (55#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_xlregister' (56#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:284]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_fft' (57#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_ifft' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:64]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_xldelay' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:309]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:94]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'srlc33e' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:60]
+	Parameter width bound to: 16 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+INFO: [Synth 8-6157] synthesizing module 'FDE' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13625]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDE' (58#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13625]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e' (59#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg' (60#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_xldelay' (61#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:309]
+INFO: [Synth 8-6157] synthesizing module 'xlofdm_transreceiver_xfft_v9_1_i0_cad188b2740f25cd0ec8cc0eb6f69249' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:625]
+WARNING: [Synth 8-7071] port 'event_tlast_unexpected' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:644]
+WARNING: [Synth 8-7071] port 'event_tlast_missing' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:644]
+WARNING: [Synth 8-7071] port 'event_status_channel_halt' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:644]
+WARNING: [Synth 8-7071] port 'event_data_in_channel_halt' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:644]
+WARNING: [Synth 8-7071] port 'event_data_out_channel_halt' of module 'ofdm_transreceiver_xfft_v9_1_i0' is unconnected for instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:644]
+WARNING: [Synth 8-7023] instance 'ofdm_transreceiver_xfft_v9_1_i0_instance' of module 'ofdm_transreceiver_xfft_v9_1_i0' has 19 connections declared, but only 14 given [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:644]
+INFO: [Synth 8-6155] done synthesizing module 'xlofdm_transreceiver_xfft_v9_1_i0_cad188b2740f25cd0ec8cc0eb6f69249' (62#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:625]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_ifft' (63#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:64]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_qam_demodulation' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:125]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_constant_8952236100' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:339]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_8952236100' (64#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:339]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_mcode_block_ff752da6c7' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:347]
+	Parameter const_value bound to: 1'b1 
+	Parameter const_value_x_000000 bound to: 1'b0 
+	Parameter const_value_x_000001 bound to: 1'b1 
+	Parameter const_value_x_000002 bound to: 1'b0 
+	Parameter const_value_x_000003 bound to: 1'b1 
+	Parameter const_value_x_000004 bound to: 1'b0 
+	Parameter const_value_x_000005 bound to: 1'b1 
+	Parameter const_value_x_000006 bound to: 1'b0 
+	Parameter const_value_x_000007 bound to: 1'b1 
+	Parameter const_value_x_000008 bound to: 1'b0 
+	Parameter const_value_x_000009 bound to: 1'b1 
+	Parameter const_value_x_000010 bound to: 1'b0 
+	Parameter const_value_x_000011 bound to: 1'b0 
+	Parameter const_value_x_000012 bound to: 23'sb00000000000000000000000 
+	Parameter const_value_x_000013 bound to: 1'b1 
+	Parameter const_value_x_000014 bound to: 1'b0 
+	Parameter const_value_x_000015 bound to: 1'b1 
+	Parameter const_value_x_000016 bound to: 1'b0 
+	Parameter const_value_x_000017 bound to: 1'b1 
+	Parameter const_value_x_000018 bound to: 1'b0 
+	Parameter const_value_x_000019 bound to: 1'b1 
+	Parameter const_value_x_000020 bound to: 1'b0 
+	Parameter const_value_x_000021 bound to: 1'b1 
+	Parameter const_value_x_000022 bound to: 1'b0 
+	Parameter const_value_x_000023 bound to: 1'b1 
+	Parameter const_value_x_000024 bound to: 1'b0 
+	Parameter const_value_x_000025 bound to: 1'b0 
+	Parameter const_value_x_000026 bound to: 23'sb00000000000000000000000 
+	Parameter const_value_x_000027 bound to: 1'b1 
+	Parameter const_value_x_000028 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_mcode_block_ff752da6c7' (65#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:347]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_qam_demodulation' (66#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:125]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_qam_modulation' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:155]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_xlsprom' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:502]
+	Parameter c_width bound to: 16 - type: integer 
+	Parameter c_address_width bound to: 2 - type: integer 
+	Parameter mem_size bound to: 64 - type: integer 
+	Parameter mem_init_file bound to: xpm_cc2c29_vivado.mem - type: string 
+	Parameter read_reset_val bound to: 0 - type: string 
+	Parameter mem_type bound to: block - type: string 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sprom' [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8727]
+	Parameter MEMORY_SIZE bound to: 64 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: xpm_cc2c29_vivado.mem - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter P_CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter P_MEMORY_OPTIMIZATION bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter MEMORY_SIZE bound to: 64 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: xpm_cc2c29_vivado.mem - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 16 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 16 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 16 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 16 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 4 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 16 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 16 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 16 - type: integer 
+	Parameter rstb_loop_iter bound to: 16 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 16 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'xpm_cc2c29_vivado.mem' is read successfully [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1104]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (67#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sprom' (68#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8727]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_xlsprom' (69#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:502]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_xlslice' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:567]
+	Parameter new_msb bound to: 1 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 4 - type: integer 
+	Parameter y_width bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_xlslice' (70#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:567]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_xlslice__parameterized0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:567]
+	Parameter new_msb bound to: 3 - type: integer 
+	Parameter new_lsb bound to: 2 - type: integer 
+	Parameter x_width bound to: 4 - type: integer 
+	Parameter y_width bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_xlslice__parameterized0' (70#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:567]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_qam_modulation' (71#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:155]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_xlp2s' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:41]
+	Parameter dout_width bound to: 1 - type: integer 
+	Parameter dout_arith bound to: 1 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter din_width bound to: 4 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter lsb_first bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter num_outputs bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:94]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized0' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:60]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized0' (71#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized0' (71#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/synth_reg.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_xlp2s' (72#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:41]
+INFO: [Synth 8-6157] synthesizing module 'ofdm_transreceiver_xls2p' [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:165]
+	Parameter dout_width bound to: 32'sb00000000000000000000000000000100 
+	Parameter dout_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter dout_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter din_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter din_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter din_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter rst_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter rst_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter rst_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter en_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter en_bin_pt bound to: 32'sb00000000000000000000000000000000 
+	Parameter en_arith bound to: 32'sb00000000000000000000000000000001 
+	Parameter lsb_first bound to: 32'sb00000000000000000000000000000001 
+	Parameter latency bound to: 32'sb00000000000000000000000000000001 
+	Parameter num_inputs bound to: 32'sb00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_xls2p' (73#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver_entity_declarations.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_struct' (74#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:231]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver' (75#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ipshared/3e1c/hdl/ofdm_transreceiver.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'ofdm_transreceiver_bd_ofdm_transreceiver_1_0' (76#1) [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/synth/ofdm_transreceiver_bd_ofdm_transreceiver_1_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1925.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 899 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/constrs/ofdm_transreceiver.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/constrs/ofdm_transreceiver.xdc:4]
+Finished Parsing XDC File [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/constrs/ofdm_transreceiver.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.gen/sources_1/bd/ofdm_transreceiver_bd/ip/ofdm_transreceiver_bd_ofdm_transreceiver_1_0/constrs/ofdm_transreceiver.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1925.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 277 instances were transformed.
+  DSP48E => DSP48E1: 24 instances
+  FD => FDRE: 6 instances
+  FDE => FDRE: 233 instances
+  FDR => FDRE: 14 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.226 . Memory (MB): peak = 1925.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1/dont_touch.xdc, line 12).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/ofdm_transreceiver_struct/qam_modulation/i_rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ofdm_transreceiver_struct/qam_modulation/q_rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |DSP48E        |        24|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |DSP48E_bbox     |     1|
+|2     |DSP48E_bbox_11_ |     1|
+|3     |DSP48E_bbox     |     1|
+|4     |DSP48E_bbox_12_ |     1|
+|5     |DSP48E_bbox     |     1|
+|6     |DSP48E_bbox_13_ |     1|
+|7     |DSP48E_bbox     |     1|
+|8     |DSP48E_bbox_14_ |     1|
+|9     |DSP48E_bbox     |     1|
+|10    |DSP48E_bbox_15_ |     1|
+|11    |DSP48E_bbox     |     1|
+|12    |DSP48E_bbox_16_ |     1|
+|13    |DSP48E_bbox     |     1|
+|14    |DSP48E_bbox_17_ |     1|
+|15    |DSP48E_bbox     |     1|
+|16    |DSP48E_bbox_18_ |     1|
+|17    |DSP48E_bbox     |     1|
+|18    |DSP48E_bbox_19_ |     1|
+|19    |DSP48E_bbox     |     1|
+|20    |DSP48E_bbox_20_ |     1|
+|21    |DSP48E_bbox     |     1|
+|22    |DSP48E_bbox_21_ |     1|
+|23    |DSP48E_bbox     |     1|
+|24    |DSP48E_bbox_22_ |     1|
+|25    |CARRY4          |    20|
+|26    |DSP48E1         |    16|
+|28    |LUT1            |    39|
+|29    |LUT2            |   290|
+|30    |LUT3            |  1297|
+|31    |LUT4            |   113|
+|32    |LUT5            |    44|
+|33    |LUT6            |   130|
+|34    |MUXCY           |   324|
+|35    |RAMB18E1        |     2|
+|36    |SRL16E          |  1249|
+|37    |SRLC32E         |   102|
+|38    |XORCY           |   282|
+|39    |FD              |     6|
+|40    |FDE             |   222|
+|41    |FDR             |    12|
+|42    |FDRE            |  3759|
+|43    |FDSE            |     2|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1925.852 ; gain = 814.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:47 . Memory (MB): peak = 1925.852 ; gain = 814.520
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 1925.852 ; gain = 814.520
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1925.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 908 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1925.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 376 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 112 instances
+  DSP48E => DSP48E1: 24 instances
+  FD => FDRE: 6 instances
+  FDE => FDRE: 222 instances
+  FDR => FDRE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:57 . Memory (MB): peak = 1925.852 ; gain = 814.520
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1/ofdm_transreceiver_bd_ofdm_transreceiver_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ofdm_transreceiver_bd_ofdm_transreceiver_1_0, cache-ID = 1e26f3350e9504eb
+INFO: [Coretcl 2-1174] Renamed 711 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Gokaraan/Documents/Composer/OFDM/HDL/ip_catalog/ofdm_transreceiver.runs/ofdm_transreceiver_bd_ofdm_transreceiver_1_0_synth_1/ofdm_transreceiver_bd_ofdm_transreceiver_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ofdm_transreceiver_bd_ofdm_transreceiver_1_0_utilization_synth.rpt -pb ofdm_transreceiver_bd_ofdm_transreceiver_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 21 01:17:49 2025...

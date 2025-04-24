@@ -1,0 +1,112 @@
+{
+  'Line_106' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/ifft/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'OFDM_Transreceiver/IFFT/Delay1'
+  },
+  'Line_114' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/ifft/fft',
+    'Instance' => 'fft',
+    'SimulinkInstance' => 'OFDM_Transreceiver/IFFT/FFT'
+  },
+  'Line_137' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_demodulation/constant',
+    'Instance' => 'constant',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Demodulation/Constant'
+  },
+  'Line_143' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_demodulation/mcode',
+    'Instance' => 'mcode',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Demodulation/MCode'
+  },
+  'Line_183' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_modulation/i_rom',
+    'Instance' => 'i_rom',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Modulation/I ROM'
+  },
+  'Line_200' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_modulation/q_rom',
+    'Instance' => 'q_rom',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Modulation/Q ROM'
+  },
+  'Line_214' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_modulation/slice',
+    'Instance' => 'slice',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Modulation/Slice'
+  },
+  'Line_224' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_modulation/slice1',
+    'Instance' => 'slice1',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Modulation/Slice1'
+  },
+  'Line_269' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/fft',
+    'Instance' => 'fft',
+    'SimulinkInstance' => 'OFDM_Transreceiver/FFT'
+  },
+  'Line_277' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/ifft',
+    'Instance' => 'ifft',
+    'SimulinkInstance' => 'OFDM_Transreceiver/IFFT'
+  },
+  'Line_285' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_demodulation',
+    'Instance' => 'qam_demodulation',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Demodulation'
+  },
+  'Line_29' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/fft/inverse_fft',
+    'Instance' => 'inverse_fft',
+    'SimulinkInstance' => 'OFDM_Transreceiver/FFT/Inverse FFT'
+  },
+  'Line_290' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/qam_modulation',
+    'Instance' => 'qam_modulation',
+    'SimulinkInstance' => 'OFDM_Transreceiver/QAM_Modulation'
+  },
+  'Line_308' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/parallel_to_serial',
+    'Instance' => 'parallel_to_serial',
+    'SimulinkInstance' => 'OFDM_Transreceiver/Parallel to Serial'
+  },
+  'Line_331' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/serial_to_parallel',
+    'Instance' => 'serial_to_parallel',
+    'SimulinkInstance' => 'OFDM_Transreceiver/Serial to Parallel'
+  },
+  'Line_359' => {
+    'CodeInstance' => 'ofdm_transreceiver_default_clock_driver/clockdriver_x0',
+    'Instance' => 'clockdriver_x0',
+    'SimulinkInstance' => ''
+  },
+  'Line_370' => {
+    'CodeInstance' => 'ofdm_transreceiver_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_394' => {
+    'CodeInstance' => 'ofdm_transreceiver_default_clock_driver',
+    'Instance' => 'ofdm_transreceiver_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_403' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct',
+    'Instance' => 'ofdm_transreceiver_struct',
+    'SimulinkInstance' => 'OFDM_Transreceiver'
+  },
+  'Line_41' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/fft/real_fft_input',
+    'Instance' => 'real_fft_input',
+    'SimulinkInstance' => 'OFDM_Transreceiver/FFT/Real_FFT_Input'
+  },
+  'Line_53' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/fft/imaginary_fft_input',
+    'Instance' => 'imaginary_fft_input',
+    'SimulinkInstance' => 'OFDM_Transreceiver/FFT/Imaginary_FFT_input'
+  },
+  'Line_92' => {
+    'CodeInstance' => 'ofdm_transreceiver_struct/ifft/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'OFDM_Transreceiver/IFFT/Delay'
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ofdm_transreceiver_bd": {
+			"proto_instances": {
+			}
+		}
+	}
+}

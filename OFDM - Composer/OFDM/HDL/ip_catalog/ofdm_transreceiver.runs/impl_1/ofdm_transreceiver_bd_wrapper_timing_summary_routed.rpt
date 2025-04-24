@@ -1,0 +1,1265 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 21 01:21:06 2025
+| Host         : DESKTOP-IJF0GJG running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file ofdm_transreceiver_bd_wrapper_timing_summary_routed.rpt -pb ofdm_transreceiver_bd_wrapper_timing_summary_routed.pb -rpx ofdm_transreceiver_bd_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : ofdm_transreceiver_bd_wrapper
+| Device       : 7a35ti-cpg236
+| Speed File   : -1L  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (33)
+6. checking no_output_delay (47)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (33)
+-------------------------------
+ There are 33 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (47)
+--------------------------------
+ There are 47 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.660        0.000                      0                13600        0.017        0.000                      0                13600        4.020        0.000                       0                  5371  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 1.660        0.000                      0                13600        0.017        0.000                      0                13600        4.020        0.000                       0                  5371  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.660ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.017ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.660ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e0/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.698ns  (logic 0.456ns (5.924%)  route 7.242ns (94.076%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.090ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.217ns = ( 14.217 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.242    12.255    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/ce_w2c
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e0/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.453    14.217    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/aclk
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e0/CLK
+                         clock pessimism              0.250    14.467    
+                         clock uncertainty           -0.035    14.432    
+    SLICE_X54Y48         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.915    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e0
+  -------------------------------------------------------------------
+                         required time                         13.915    
+                         arrival time                         -12.255    
+  -------------------------------------------------------------------
+                         slack                                  1.660    
+
+Slack (MET) :             1.660ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.698ns  (logic 0.456ns (5.924%)  route 7.242ns (94.076%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.090ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.217ns = ( 14.217 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.242    12.255    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/ce_w2c
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.453    14.217    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/aclk
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1/CLK
+                         clock pessimism              0.250    14.467    
+                         clock uncertainty           -0.035    14.432    
+    SLICE_X54Y48         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.915    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         13.915    
+                         arrival time                         -12.255    
+  -------------------------------------------------------------------
+                         slack                                  1.660    
+
+Slack (MET) :             1.660ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e0/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.698ns  (logic 0.456ns (5.924%)  route 7.242ns (94.076%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.090ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.217ns = ( 14.217 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.242    12.255    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/ce_w2c
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e0/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.453    14.217    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/aclk
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e0/CLK
+                         clock pessimism              0.250    14.467    
+                         clock uncertainty           -0.035    14.432    
+    SLICE_X54Y48         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.915    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e0
+  -------------------------------------------------------------------
+                         required time                         13.915    
+                         arrival time                         -12.255    
+  -------------------------------------------------------------------
+                         slack                                  1.660    
+
+Slack (MET) :             1.660ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.698ns  (logic 0.456ns (5.924%)  route 7.242ns (94.076%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.090ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.217ns = ( 14.217 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.242    12.255    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/ce_w2c
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.453    14.217    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/aclk
+    SLICE_X54Y48         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1/CLK
+                         clock pessimism              0.250    14.467    
+                         clock uncertainty           -0.035    14.432    
+    SLICE_X54Y48         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.915    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         13.915    
+                         arrival time                         -12.255    
+  -------------------------------------------------------------------
+                         slack                                  1.660    
+
+Slack (MET) :             1.734ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e0/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.672ns  (logic 0.456ns (5.943%)  route 7.216ns (94.057%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.041ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.266ns = ( 14.266 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.216    12.229    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/ce_w2c
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e0/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.502    14.266    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/aclk
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e0/CLK
+                         clock pessimism              0.250    14.516    
+                         clock uncertainty           -0.035    14.481    
+    SLICE_X64Y25         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.964    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e0
+  -------------------------------------------------------------------
+                         required time                         13.964    
+                         arrival time                         -12.229    
+  -------------------------------------------------------------------
+                         slack                                  1.734    
+
+Slack (MET) :             1.734ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e1/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.672ns  (logic 0.456ns (5.943%)  route 7.216ns (94.057%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.041ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.266ns = ( 14.266 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.216    12.229    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/ce_w2c
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e1/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.502    14.266    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/aclk
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e1/CLK
+                         clock pessimism              0.250    14.516    
+                         clock uncertainty           -0.035    14.481    
+    SLICE_X64Y25         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.964    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         13.964    
+                         arrival time                         -12.229    
+  -------------------------------------------------------------------
+                         slack                                  1.734    
+
+Slack (MET) :             1.734ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e0/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.672ns  (logic 0.456ns (5.943%)  route 7.216ns (94.057%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.041ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.266ns = ( 14.266 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.216    12.229    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/ce_w2c
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e0/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.502    14.266    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/aclk
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e0/CLK
+                         clock pessimism              0.250    14.516    
+                         clock uncertainty           -0.035    14.481    
+    SLICE_X64Y25         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.964    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e0
+  -------------------------------------------------------------------
+                         required time                         13.964    
+                         arrival time                         -12.229    
+  -------------------------------------------------------------------
+                         slack                                  1.734    
+
+Slack (MET) :             1.734ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e1/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.672ns  (logic 0.456ns (5.943%)  route 7.216ns (94.057%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.041ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.266ns = ( 14.266 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.216    12.229    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/ce_w2c
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e1/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.502    14.266    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/aclk
+    SLICE_X64Y25         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e1/CLK
+                         clock pessimism              0.250    14.516    
+                         clock uncertainty           -0.035    14.481    
+    SLICE_X64Y25         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.964    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         13.964    
+                         arrival time                         -12.229    
+  -------------------------------------------------------------------
+                         slack                                  1.734    
+
+Slack (MET) :             1.840ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e0/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.570ns  (logic 0.456ns (6.023%)  route 7.114ns (93.977%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.270ns = ( 14.270 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.114    12.127    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/ce_w2c
+    SLICE_X60Y28         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e0/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.506    14.270    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/aclk
+    SLICE_X60Y28         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e0/CLK
+                         clock pessimism              0.250    14.520    
+                         clock uncertainty           -0.035    14.485    
+    SLICE_X60Y28         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.968    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e0
+  -------------------------------------------------------------------
+                         required time                         13.968    
+                         arrival time                         -12.127    
+  -------------------------------------------------------------------
+                         slack                                  1.840    
+
+Slack (MET) :             1.840ns  (required time - arrival time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1/CE
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.570ns  (logic 0.456ns (6.023%)  route 7.114ns (93.977%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.270ns = ( 14.270 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.557ns
+    Clock Pessimism Removal (CPR):    0.250ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.938     0.938 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972     2.910    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.006 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.551     4.557    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/aclk
+    SLICE_X32Y28         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y28         FDRE (Prop_fdre_C_Q)         0.456     5.013 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg/Q
+                         net (fo=2438, routed)        7.114    12.127    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/ce_w2c
+    SLICE_X60Y28         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    M18                                               0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.805    10.805 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.868    12.673    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.764 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        1.506    14.270    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/aclk
+    SLICE_X60Y28         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1/CLK
+                         clock pessimism              0.250    14.520    
+                         clock uncertainty           -0.035    14.485    
+    SLICE_X60Y28         SRL16E (Setup_srl16e_CLK_CE)
+                                                     -0.517    13.968    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/input_delay_im/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         13.968    
+                         arrival time                         -12.127    
+  -------------------------------------------------------------------
+                         slack                                  1.840    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.017ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[17]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.329ns  (logic 0.128ns (38.889%)  route 0.201ns (61.111%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.904ns
+    Source Clock Delay      (SCD):    1.390ns
+    Clock Pessimism Removal (CPR):    0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.563     1.390    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/aclk
+    SLICE_X39Y46         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[17]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y46         FDRE (Prop_fdre_C_Q)         0.128     1.518 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[17]/Q
+                         net (fo=1, routed)           0.201     1.719    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/D[17]
+    SLICE_X34Y46         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.831     1.904    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/aclk
+    SLICE_X34Y46         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1/CLK
+                         clock pessimism             -0.251     1.653    
+    SLICE_X34Y46         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.049     1.702    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         -1.702    
+                         arrival time                           1.719    
+  -------------------------------------------------------------------
+                         slack                                  0.017    
+
+Slack (MET) :             0.029ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_fdre0/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.389ns  (logic 0.247ns (63.512%)  route 0.142ns (36.488%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.268ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.908ns
+    Source Clock Delay      (SCD):    1.394ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.567     1.394    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/aclk
+    SLICE_X14Y49         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_fdre0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y49         FDRE (Prop_fdre_C_Q)         0.148     1.542 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_fdre0/Q
+                         net (fo=2, routed)           0.142     1.684    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/Q[16]
+    SLICE_X13Y50         LUT3 (Prop_lut3_I0_O)        0.099     1.783 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.gen_full_lut6_2s[8].mlut0/O
+                         net (fo=1, routed)           0.000     1.783    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/qi[16]
+    SLICE_X13Y50         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.834     1.908    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/aclk
+    SLICE_X13Y50         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[16]/C
+                         clock pessimism             -0.246     1.662    
+    SLICE_X13Y50         FDRE (Hold_fdre_C_D)         0.092     1.754    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[16]
+  -------------------------------------------------------------------
+                         required time                         -1.754    
+                         arrival time                           1.783    
+  -------------------------------------------------------------------
+                         slack                                  0.029    
+
+Slack (MET) :             0.029ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/no_nfft.bypass_reg/no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram/i_bb_inst/f0.srl_sig_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.306ns  (logic 0.148ns (48.306%)  route 0.158ns (51.694%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.261ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.895ns
+    Source Clock Delay      (SCD):    1.383ns
+    Clock Pessimism Removal (CPR):    0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.556     1.383    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/aclk
+    SLICE_X34Y17         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y17         FDRE (Prop_fdre_C_Q)         0.148     1.531 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1/Q
+                         net (fo=1, routed)           0.158     1.689    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/no_nfft.bypass_reg/no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram/i_bb_inst/d[0]
+    SLICE_X37Y19         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/no_nfft.bypass_reg/no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram/i_bb_inst/f0.srl_sig_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.822     1.895    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/no_nfft.bypass_reg/no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram/i_bb_inst/clk
+    SLICE_X37Y19         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/no_nfft.bypass_reg/no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram/i_bb_inst/f0.srl_sig_reg[0][0]/C
+                         clock pessimism             -0.251     1.644    
+    SLICE_X37Y19         FDRE (Hold_fdre_C_D)         0.016     1.660    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/no_nfft.bypass_reg/no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram/i_bb_inst/f0.srl_sig_reg[0][0]
+  -------------------------------------------------------------------
+                         required time                         -1.660    
+                         arrival time                           1.689    
+  -------------------------------------------------------------------
+                         slack                                  0.029    
+
+Slack (MET) :             0.031ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_fdre1/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.406ns  (logic 0.215ns (52.959%)  route 0.191ns (47.041%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.268ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.908ns
+    Source Clock Delay      (SCD):    1.394ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.567     1.394    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/aclk
+    SLICE_X14Y49         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_fdre1/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y49         FDRE (Prop_fdre_C_Q)         0.164     1.558 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_fdre1/Q
+                         net (fo=2, routed)           0.191     1.749    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/Q[15]
+    SLICE_X13Y50         LUT3 (Prop_lut3_I0_O)        0.051     1.800 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.gen_full_lut6_2s[7].mlut1/O
+                         net (fo=1, routed)           0.000     1.800    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/qi[15]
+    SLICE_X13Y50         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.834     1.908    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/aclk
+    SLICE_X13Y50         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[15]/C
+                         clock pessimism             -0.246     1.662    
+    SLICE_X13Y50         FDRE (Hold_fdre_C_D)         0.107     1.769    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_B/use_lut6_2.latency1.Q_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.769    
+                         arrival time                           1.800    
+  -------------------------------------------------------------------
+                         slack                                  0.031    
+
+Slack (MET) :             0.032ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.350ns  (logic 0.128ns (36.610%)  route 0.222ns (63.390%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.904ns
+    Source Clock Delay      (SCD):    1.390ns
+    Clock Pessimism Removal (CPR):    0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.563     1.390    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/aclk
+    SLICE_X39Y46         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y46         FDRE (Prop_fdre_C_Q)         0.128     1.518 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[15]/Q
+                         net (fo=1, routed)           0.222     1.739    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/D[15]
+    SLICE_X34Y45         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.831     1.904    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/aclk
+    SLICE_X34Y45         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1/CLK
+                         clock pessimism             -0.251     1.653    
+    SLICE_X34Y45         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.055     1.708    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         -1.708    
+                         arrival time                           1.739    
+  -------------------------------------------------------------------
+                         slack                                  0.032    
+
+Slack (MET) :             0.032ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_srl16e1/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.350ns  (logic 0.148ns (42.239%)  route 0.202ns (57.761%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.903ns
+    Source Clock Delay      (SCD):    1.389ns
+    Clock Pessimism Removal (CPR):    0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.562     1.389    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/aclk
+    SLICE_X38Y41         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y41         FDRE (Prop_fdre_C_Q)         0.148     1.537 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[11]/Q
+                         net (fo=1, routed)           0.202     1.739    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/D[11]
+    SLICE_X34Y41         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_srl16e1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.830     1.903    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/aclk
+    SLICE_X34Y41         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_srl16e1/CLK
+                         clock pessimism             -0.251     1.652    
+    SLICE_X34Y41         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.055     1.707    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         -1.707    
+                         arrival time                           1.739    
+  -------------------------------------------------------------------
+                         slack                                  0.032    
+
+Slack (MET) :             0.032ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[19]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[9].i_srl16e1/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.350ns  (logic 0.148ns (42.239%)  route 0.202ns (57.761%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.904ns
+    Source Clock Delay      (SCD):    1.390ns
+    Clock Pessimism Removal (CPR):    0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.563     1.390    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/aclk
+    SLICE_X38Y46         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[19]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y46         FDRE (Prop_fdre_C_Q)         0.148     1.538 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[19]/Q
+                         net (fo=1, routed)           0.202     1.740    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/D[19]
+    SLICE_X34Y46         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[9].i_srl16e1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.831     1.904    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/aclk
+    SLICE_X34Y46         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[9].i_srl16e1/CLK
+                         clock pessimism             -0.251     1.653    
+    SLICE_X34Y46         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.055     1.708    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[9].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         -1.708    
+                         arrival time                           1.740    
+  -------------------------------------------------------------------
+                         slack                                  0.032    
+
+Slack (MET) :             0.033ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/rounding.ROUND_0/gated_incr_regs[16].ff/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/use_lut6_2.latency1.Q_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.393ns  (logic 0.186ns (47.317%)  route 0.207ns (52.683%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.268ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.908ns
+    Source Clock Delay      (SCD):    1.394ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.567     1.394    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/rounding.ROUND_0/aclk
+    SLICE_X11Y49         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/rounding.ROUND_0/gated_incr_regs[16].ff/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y49         FDRE (Prop_fdre_C_Q)         0.141     1.535 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/rounding.ROUND_0/gated_incr_regs[16].ff/Q
+                         net (fo=2, routed)           0.207     1.742    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/pe_out_re[1]_12[16]
+    SLICE_X13Y50         LUT3 (Prop_lut3_I0_O)        0.045     1.787 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/use_lut6_2.gen_full_lut6_2s[8].mlut0/O
+                         net (fo=1, routed)           0.000     1.787    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/qi[16]
+    SLICE_X13Y50         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/use_lut6_2.latency1.Q_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.834     1.908    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/aclk
+    SLICE_X13Y50         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/use_lut6_2.latency1.Q_reg[16]/C
+                         clock pessimism             -0.246     1.662    
+    SLICE_X13Y50         FDRE (Hold_fdre_C_D)         0.092     1.754    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/mux_in_A/use_lut6_2.latency1.Q_reg[16]
+  -------------------------------------------------------------------
+                         required time                         -1.754    
+                         arrival time                           1.787    
+  -------------------------------------------------------------------
+                         slack                                  0.033    
+
+Slack (MET) :             0.036ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.348ns  (logic 0.148ns (42.521%)  route 0.200ns (57.479%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.904ns
+    Source Clock Delay      (SCD):    1.390ns
+    Clock Pessimism Removal (CPR):    0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.563     1.390    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/aclk
+    SLICE_X38Y46         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y46         FDRE (Prop_fdre_C_Q)         0.148     1.538 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[13]/Q
+                         net (fo=1, routed)           0.200     1.738    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/D[13]
+    SLICE_X34Y45         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.831     1.904    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/aclk
+    SLICE_X34Y45         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1/CLK
+                         clock pessimism             -0.251     1.653    
+    SLICE_X34Y45         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.049     1.702    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         -1.702    
+                         arrival time                           1.738    
+  -------------------------------------------------------------------
+                         slack                                  0.036    
+
+Slack (MET) :             0.038ns  (arrival time - required time)
+  Source:                 ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_srl16e1/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.350ns  (logic 0.148ns (42.306%)  route 0.202ns (57.694%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.903ns
+    Source Clock Delay      (SCD):    1.389ns
+    Clock Pessimism Removal (CPR):    0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.167     0.167 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.801    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.827 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.562     1.389    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/aclk
+    SLICE_X38Y41         FDRE                                         r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y41         FDRE (Prop_fdre_C_Q)         0.148     1.537 r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/mux_out_A/use_lut6_2.latency1.Q_reg[9]/Q
+                         net (fo=1, routed)           0.202     1.739    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/D[9]
+    SLICE_X34Y41         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_srl16e1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    M18                  IBUF (Prop_ibuf_I_O)         0.356     0.356 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.689     1.044    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.073 r  clk_IBUF_BUFG_inst/O
+                         net (fo=5374, routed)        0.830     1.903    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/aclk
+    SLICE_X34Y41         SRL16E                                       r  ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_srl16e1/CLK
+                         clock pessimism             -0.251     1.652    
+    SLICE_X34Y41         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.049     1.701    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/out_commutator_B/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_srl16e1
+  -------------------------------------------------------------------
+                         required time                         -1.701    
+                         arrival time                           1.739    
+  -------------------------------------------------------------------
+                         slack                                  0.038    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y8    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/qam_modulation/i_rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y9    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/qam_modulation/q_rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X1Y3     ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[1].use_dsp48e1.dsp/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X0Y1     ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FW_1.BF_1/dsp48s.dsps_only.vx5_dsp48es.B/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X0Y6     ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e1.dsp/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X0Y3     ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/dsp48s.dsps_only.vx5_dsp48es.B/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X1Y11    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/FB_1.BF_1/BTFLY0/dsp48_bfly_byp.bfly_dsp48_byp/dsp48e_simd.bf_dsp48e_simd_bypass/B_ir/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X1Y14    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e1.dsp/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X1Y13    ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/hasbf2.FW_2.BF_2/dsp48s.dsps_only.vx5_dsp48es.B/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y18   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_srl16e/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y18   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_srl16e0/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y18   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_srl16e1/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y19   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_srl16e0/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y19   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_srl16e1/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y19   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e0/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y19   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_srl16e1/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y20   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e0/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y20   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_srl16e1/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X10Y20   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/FW_1.BF_1/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_srl16e0/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y38   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_srl16e0/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y38   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[4].i_srl16e1/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y38   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_srl16e0/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y38   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[5].i_srl16e1/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y39   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e0/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y39   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[6].i_srl16e1/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y39   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e0/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y39   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[7].i_srl16e1/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y40   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e0/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X14Y40   ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/hasbf2.FW_2.BF_2/in_commutator_A/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[8].i_srl16e1/CLK
+
+
+

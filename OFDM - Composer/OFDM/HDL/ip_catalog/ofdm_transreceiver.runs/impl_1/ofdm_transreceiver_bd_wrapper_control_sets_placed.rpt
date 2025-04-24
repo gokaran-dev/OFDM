@@ -1,0 +1,105 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 21 01:20:44 2025
+| Host         : DESKTOP-IJF0GJG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ofdm_transreceiver_bd_wrapper_control_sets_placed.rpt
+| Design       : ofdm_transreceiver_bd_wrapper
+| Device       : xc7a35ti
+----------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    21 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             233 |           73 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            3754 |          843 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                                                                                                                            Enable Signal                                                                                                                            | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/config_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                                               |                  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/symbols_out_remaining[5]_i_1_n_0                                                                        |                  |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/symbols_out_remaining[5]_i_1_n_0                                                                               |                  |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/DOUT_CNT_CTRL_0/cnt/cnt_ce                                            |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/proc0_counter/load_cnt_ce                                        |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce  |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce  |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/DOUT_CNT_CTRL_0/cnt/cnt_ce                                                   |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/proc0_counter/load_cnt_ce                                               |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce        |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce         |                  |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.bf2_addr_gen/cnt/cnt_ce        |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_addr_gen.tw_addr_gen/cnt/cnt_ce         |                  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/data_out_10                                     |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/data_out_20                                     |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                                       |                  |                4 |             32 |         8.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/data_out_10                                            |                  |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/data_out_20                                            |                  |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                                              |                  |                4 |             32 |         8.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/no_bit_reverse.DV_delay/wr_enable                                     |                  |                6 |             46 |         7.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/no_bit_reverse.DV_delay/wr_enable                                            |                  |                6 |             46 |         7.67 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[0].ce_reg/has_latency.fd_array[1].reg_comp_1/ce_vec_0                                                                                |                  |               34 |            164 |         4.82 |
+|  clk_IBUF_BUFG |                                                                                                                                                                                                                                                                     |                  |               73 |            233 |         3.19 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/fft/inverse_fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/ce_w2c                                                                                                  |                  |              378 |           2269 |         6.00 |
+|  clk_IBUF_BUFG | ofdm_transreceiver_bd_i/ofdm_transreceiver_1/inst/ofdm_transreceiver_struct/ifft/fft/ofdm_transreceiver_xfft_v9_1_i0_instance/U0/i_synth/axi_wrapper/ce_w2c                                                                                                         |                  |              361 |           2269 |         6.29 |
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+
